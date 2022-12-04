@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+        <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body class="body">
+
+    <form class="form js-form">
+        <legend class="form__legend">Currency converter</legend>
+        <p>
+            <label>
+                <span class="form__label">
+                    Amount to be exchanged*:
+                </span>
+                <input placeholder="Enter Amount" class="form__field  js-amount" type="number" name="amount" min="0"
+                    max="100000000" step="any" required autofocus>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <span class="form__label">
+                    Choose the type of exchange:
+                </span>
+
+                <select name="exchange" class="js-exchange">
+                    <option value="fromPlnToEur">from PLN to EUR</option>
+                    <option value="fromPlnToUsd">from PLN to USD</option>
+                    <option value="fromPlnToGbp">from PLN to GBP</option>
+                    <option value="fromEurToPln">from EUR to PLN</option>
+                    <option value="fromUsdToPln">from USD to PLN</option>
+                    <option value="fromGbpToPln">from GBP to PLN</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <button class="form__button js-button"> Recalculate</button>
+        </p>
+        <p>
+            <span class="form__label"> Result:</span><strong class="form__result js-result">N/A</strong>
+        </p>
+
+        <p class="form__paragraph">
+            Average exchange rates come from the nbp.pl website of December 2, 2022.
+        </p>
+    </form>
+
+    <footer class="footer">© Copyright 2022 by Joanna Draganek - all rights reserved.</footer>
+
+</body>
+
+</html>
