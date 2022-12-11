@@ -1,0 +1,8 @@
+.element {
+    max-width: 900px;
+    height: auto;
+    resize: both;
+    overflow: auto;
+    background-attachment: scroll;
+    background-image: url("../images/moneyBlurry.jpg");
+    }
