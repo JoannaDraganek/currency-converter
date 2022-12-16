@@ -1,6 +1,6 @@
 # currency-converter
 
-![screenshotCurrency-converter](https://i.imgur.com/edszk15.jpg)
+![screenshotCurrency-converter](https://imgur.com/PPiWZ7M.jpg)
 
 ## Demo
 https://joannadraganek.github.io/currency-converter/
